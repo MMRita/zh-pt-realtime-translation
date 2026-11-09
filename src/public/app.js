@@ -9,6 +9,7 @@ const targetLanguage = document.querySelector("#targetLanguage");
 const startButton = document.querySelector("#startButton");
 const stopButton = document.querySelector("#stopButton");
 const muteButton = document.querySelector("#muteButton");
+const clearButton = document.querySelector("#clearButton");
 const audioMix = document.querySelector("#audioMix");
 const mixValue = document.querySelector("#mixValue");
 const originalMixLabel = document.querySelector("#originalMixLabel");
@@ -81,6 +82,8 @@ muteButton.addEventListener("click", () => {
   translatedAudio.muted = !translatedAudio.muted;
   muteButton.textContent = translatedAudio.muted ? "打开译音" : "静音译音";
 });
+
+clearButton.addEventListener("click", clearTranscript);
 
 async function createSession(language) {
   let response;

@@ -181,7 +181,7 @@ article {
 }
 
 .button-row {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: center;
 }
 
@@ -466,4 +466,15 @@ ol {
 
 .transcript-card {
   min-height: 430px;
+}
+
+.transcript {
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.summary {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
 }

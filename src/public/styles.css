@@ -180,6 +180,11 @@ article {
   background: #fbfbfa;
 }
 
+.button-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+}
+
 .dock-section {
   min-width: 0;
   padding: 16px;
@@ -445,6 +450,20 @@ ol {
 /* 简洁演示界面：只显示原文和译文，诊断信息留在程序内部 */
 .meters,
 .diagnostics-card,
+.mix-control,
 .event-log-card {
   display: none !important;
+}
+
+.control-dock {
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.workspace {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.transcript-card {
+  min-height: 430px;
 }
